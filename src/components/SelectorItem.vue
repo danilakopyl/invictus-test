@@ -72,14 +72,29 @@ export default {
   flex-direction: row
   gap: 1.5rem
   width: fit-content
+  height: fit-content
 
 .selector-button
   border: 2px solid black
-  height: 2rem
-  width: 2rem
+
+  @media all and (max-width: 2000px)
+    width: 30px
+    height: 30px
+
+  @media all and (min-width: 2000px)
+    width: 40px
+    height: 40px
+
+  @media all and (min-width: 4000px)
+    width: 60px
+    height: 60px
+
 
   &:hover
     cursor: pointer
+
+
+
 
 .active
   background-color: black
